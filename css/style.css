@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+.container{
+    height: 700px;
+    width: auto;
+    border: 5px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+h3{
+    float: right;
+    background-color:green;
+    padding: 5px;
+    border: 2px solid black;
+}
+.item{
+    width:  300px;
+    height: 200px;
+    background-color: orangered;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 3px;
+}
+@media (min-width: 992px) {
+    .container{
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width:991px)
+{
+    .container{
+        width: 768px;
+    }
+}
+@media (max-width: 767px)
+{
+    .container{
+        width:80%;
+    }
+}
